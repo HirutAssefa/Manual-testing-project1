@@ -1,4 +1,4 @@
-# Registrační formulář – Manuální testování projekt – 1(cz)
+# Registrační formulář – Projekt 1 - Manuální testování (cz)
 
 ![Manuální testování](/images/registration-form.png)
 
