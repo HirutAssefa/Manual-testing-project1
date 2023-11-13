@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 400px;
+    }
+
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-control {
+      border-radius: 3px;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-label {
+      font-weight: bold;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container col-md-6">
+    <h1>Registration Form</h1>
+    <form id="registration-form" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="fname" class="custom-label">First Name (2-50 characters, letters and spaces only):</label>
+        <input type="text" class="form-control" id="fname" name="fname" pattern="[A-Za-z\s]{2,50}" title="2-50 characters, letters and spaces only" placeholder="First name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lname" class="custom-label">Last Name (2-50 characters, letters and spaces only):</label>
+        <input type="text" class="form-control" id="lname" name="lname" pattern="[A-Za-z\s]{2,50}" title="2-50 characters, letters and spaces only" placeholder="Last name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="custom-label">Email (Correct email format):</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Example@yahoo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="custom-label">Password (At least 1 uppercase, 1 lowercase, 1 special character, 8 characters min):</label>
+        <input type="password" class="form-control" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" title="At least 1 uppercase, 1 lowercase, 1 special character, 8 characters min" placeholder="Password@" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block submit-button">Register</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function validateForm() {
+      // You can add custom JavaScript validation here if needed
+      return true; // Return true if the form is valid, false if it's not
+    }
+  </script>
+</body>
+</html>
+
+
+
