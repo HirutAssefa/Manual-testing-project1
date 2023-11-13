@@ -22,7 +22,7 @@
 
 ## Přehled projektu
 
-Vítejte v projektu Manuální testování registračního formuláře. Tento projekt simuluje scénář v reálném světě, ve kterém manuální tester provádí hodnocení webových stránek registračních formulářů. Tento web jsem vytvořila pomocí CSS Bootstrap a projekt si klade za cíl otestovat různé funkce a funkce poskytované platformou pomocí průzkumného testování.
+Vítejte v projektu manuální testování registračního formuláře. Tento projekt simuluje scénář v reálném světě, ve kterém manuální tester provádí hodnocení webových stránek registračních formulářů. Tento web jsem vytvořila pomocí CSS Bootstrap a projekt si klade za cíl otestovat různé funkce a funkce poskytované platformou pomocí průzkumného testování.
 
 ## Popis projektu
 
@@ -83,8 +83,8 @@ Tento projekt demonstruje mé dovednosti manuálního testování prostřednictv
 
 - Zajistěte dodržování pravidel hlášení chyb.
 - **Formát názvu:** Zařízení – Oblast – Popis problému
-  - Příklad: Windows 10 – Domovská stránka – Po kliknutí na odkaz O Nás v patičce se otevře chybová stránka
-  - Příklad: macOS Monterey 12.6.3 – Košík – Kód kupónu zamítnut u vybrané položky
+  - Příklad: `[Windows 10][Domovská stránka]` – Po kliknutí na odkaz O Nás v patičce se otevře chybová stránka
+  - Příklad: `[macOS Monterey 12.6.3][Košík]` – Kód kupónu zamítnut u vybrané položky
 
 ### Pokyny pro testovací případ
 
@@ -96,8 +96,6 @@ Tento projekt demonstruje mé dovednosti manuálního testování prostřednictv
 **Scénář testu: Ověřte vstupy do registračního formuláře**
 
 **Objektivní:** Ověřte vstupní pole registračního formuláře.
-
-**Dokument testovacího scénáře:**
 
 - Podrobné testovací scénáře pro registrační formulář naleznete v [Testovací scénář](/Documenty/RegistračníFormulář-testScénáře.pdf).
 
@@ -115,9 +113,9 @@ Níže jsou hlášení chyb, se kterými jsem se setkal. Protože existuje jen n
 
 ### Hlášení chyby 1
 
-## Název: [index.html][Stránka registrace] – Dokončení procesu registrace bez potvrzovací zprávy
+## Název: `[Windows 10][Stránka registrace]` – Dokončení procesu registrace bez potvrzovací zprávy
 
-**ID chyby:**Registrace - chyba -1
+**ID chyby:** Registrace - chyba -1
 
 **Vážnost:** Vysoký
 
@@ -152,15 +150,11 @@ Proces registrace byl úspěšně dokončen, ale nezobrazila se žádná potvrzo
 
 - Snímek obrazovky stránky "potvrzení registrace".
 
-Upozorňujeme, že skutečná data použitá v testovacím případě (např. „Hirut“, „Assefa“, „example@yahoo.com“ a „Wh@1ghafsdrW“) by měla být nahrazena skutečnými testovacími daty, které jste použili ve svém testu.
-
 ### Hlášení chyby 2
 
-# Hlášení o chybě
+## Název: `[Window 10][Stránka registrace]` – 'Děkujeme za registraci' nebylo doručeno na mail
 
-## Název: [Web][Registration Page] – 'Děkujeme za registraci' nebylo doručeno na mail
-
-**ID chyby:**Registrace - chyba -2
+**ID chyby:** Registrace - chyba - 2
 
 **Vážnost:** Vysoký
 
@@ -203,7 +197,9 @@ Po registraci nepřichází žádný e-mail „Děkujeme za registraci“.
 
 Tento projekt je licencován pod licencí MIT. Viz [LICENCE](LICENCE) soubor pro podrobnosti.
 
-<--# Registration Form - Manual Testing Project - 1(en)
+
+
+# Registration Form - Manual Testing Project - 1(en)
 
 ![Manual Testing](/images/registration-form.png)
 
@@ -226,7 +222,7 @@ Tento projekt je licencován pod licencí MIT. Viz [LICENCE](LICENCE) soubor pro
 
 ## Project Overview
 
-Welcome to the Registration Form Manual Testing project. This project simulates a real-world scenario in which a manual tester conducts the evaluation of registration form websites. I created this website using CSS Bootstrap, and the project aims to test various features and functionalities provided by the platform using exploratory testing.
+Welcome to the Registration Form manual testing project. This project simulates a real-world scenario in which a manual tester conducts the evaluation of registration form websites. I created this website using CSS Bootstrap, and the project aims to test various features and functionalities provided by the platform using exploratory testing.
 
 ## Project Description
 
@@ -246,13 +242,12 @@ This project demonstrates my manual testing skills through a comprehensive evalu
 - Password
 - Register
 
-**Devices:** Any PC/Laptop
+**Devices:** PC/Laptop
 
 ### Out of Scope
 
 **Out of Scope Areas:**
 
-- Feedback
 - Non-functional testing
 
 **Do Not Report:**
@@ -281,15 +276,15 @@ This project demonstrates my manual testing skills through a comprehensive evalu
 
 1. Clone this repository.
 2. Access the registration form by opening the `index.html` file in a web browser.
-3. Perform the manual tests based on the test scenarios and cases provided in the [Test Cases](/testcases.md) document.
+3. Perform the manual tests.
 4. Record your test results in the traceability matrix and bug report documents.
 
 ### Issue Reporting Instructions
 
 - Ensure compliance with bug reporting rules.
 - **Title Format:** Device - Area - Description of the issue
-  - Example: Windows 10 - Homepage - An error page opens after clicking on the About Us link in the footer
-  - Example: macOS Monterey 12.6.3 - Cart - Coupon code rejected for selected item
+  - Example: `[Windows 10][Homepage]` - An error page opens after clicking on the About Us link in the footer
+  - Example: `[macOS Monterey 12.6.3][Cart]` - Coupon code rejected for selected item
 
 ### Test Case Instructions
 
@@ -298,21 +293,19 @@ This project demonstrates my manual testing skills through a comprehensive evalu
 
 ## Test Scenario
 
-**Test Scenario: Validate Registration Form Inputs**
+**Test Scenario: Validate registration form inputs**
 
 **Objective:** Validate the input fields of the registration form.
 
-**Test Scenario Document:**
-
-- Detailed test scenarios for the registration form can be found in the [Test Scenario](/testscenario.pdf) document.
+- Detailed test scenarios for the registration form can be found in the [Test Scenario](/Documenty/TestScenario-RegistrationForm(en).pdf) document.
 
 ## Test Cases
 
-Detailed test cases for the above scenarios can be found in the [Test Cases](/testcases.md) document.
+Detailed test cases for the above scenarios can be found in the [Test Cases](/Documenty/testCases-RegistrationForm(en).pdf) document.
 
 ## Traceability Matrix
 
-The traceability matrix maps test scenarios to test cases to ensure comprehensive test coverage. The matrix can be found in the [Traceability Matrix](./traceability-matrix.md) document.
+The traceability matrix maps test scenarios to test cases to ensure comprehensive test coverage. The matrix can be found in the [Traceability Matrix](/Documenty/RegistrationForm-RTM(en).pdf) document.
 
 ## Bug reports
 
@@ -320,9 +313,9 @@ Below are bug reports I've encountered. Since there are only a few bug reports, 
 
 ### Bug report 1
 
-## Title: [index.html][Registration Page] - Registration Process Completion Without Confirmation Message
+## Title: `[Windows 10][Registration Page]` - Registration process completion without confirmation message
 
-**Bug Id:**Registration - bug -1
+**Bug Id:** Registration - bug -1
 
 **Severity:** High
 
@@ -357,15 +350,13 @@ The registration process completed successfully, but no confirmation message was
 
 - Screenshot of the registration confirmation page.
 
-Please note that the actual data used in the test case (e.g., "hirut," "Assefa," "example@yahoo.com," and "Wh@1ghafsdrW") should be replaced with the actual test data you used in your test case.
-
 ### Bug report 2
 
 # Bug Report
 
-## Title: [Web][Registration Page] - 'Thank you for registering' Email Not Received After Successful Registration
+## Title: `[Windows 10][Registration Page]` - 'Thank you for registering' email not received after successful registration
 
-**Bug Id:**Registration - bug -2
+**Bug Id:** Registration - bug -2
 
 **Severity:** High
 
@@ -398,15 +389,5 @@ No 'Thank you for registering' email is received after registering.
 
 **Attachments:**
 
-- Screenshot of the email inbox or evidence of no 'Thank you for registering' email received.
+- Screenshot
 
-Please replace the placeholder values with the actual test data used in your test case report.
-
-## Contributors
-
-- [Hirut Assefa](mailto:hirutassefa04@yahoo.com)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
--->
