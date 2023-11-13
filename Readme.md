@@ -105,7 +105,7 @@ Tento projekt demonstruje mé dovednosti manuálního testování prostřednictv
 
 ## Matice sledovatelnosti
 
-- Matice sledovatelnosti mapuje testovací scénáře na testovací případy, aby bylo zajištěno komplexní pokrytí testem. Matici lze nalézt v [Matice sledovatelnosti](/Documenty/RegistračníFormulář-RTM.pdf) dokument.
+- Matice sledovatelnosti mapuje testovací scénáře na testovací případy, aby bylo zajištěno komplexní pokrytí testem. Matici lze nalézt v [Matice sledovatelnosti](/Documenty/RegistračníFormulář-RTM.pdf).
 
 ## Hlášení chyb
 
