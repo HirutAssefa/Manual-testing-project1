@@ -101,7 +101,7 @@ Tento projekt demonstruje mé dovednosti manuálního testování prostřednictv
 
 ## Testovací případy
 
-- Podrobné testovací případy pro výše uvedené scénáře lze nalézt v [Testovací případy](/Documenty/RegistračníFormulář-TestovacíPřípady.pdf).
+- Podrobné testovací případy pro výše uvedené scénáře lze nalézt v [Testovací případy](/Documenty/RegistračníFormulář-testovacíPřípady.pdf).
 
 ## Matice sledovatelnosti
 
